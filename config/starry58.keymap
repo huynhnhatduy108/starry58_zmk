@@ -25,21 +25,31 @@
 
         lower_layer {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans          &trans        &trans                &trans                 &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7     &kp F8          &kp F9        &kp F10               &kp F11                &kp F12
-&kp ESC     &kp EXCL      &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT                     &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp UNDERSCORE  &kp PLUS      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
-                                        &trans        &trans        &trans        &trans    &trans  &trans     &trans          &trans
+&bt BT_CLR            &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4                        &trans     &trans          &trans        &trans                &trans                 &trans
+&kp F1                &kp F2            &kp F3            &kp F4            &kp F5            &kp F6                              &kp F7     &kp F8          &kp F9        &kp F10               &kp F11                &kp F12
+&kp ESC               &kp EXCL          &kp AT_SIGN       &kp HASH          &kp DOLLAR        &kp PERCENT                         &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
+&kp LC(RS(NUMBER_4))  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)  &trans    &trans  &trans     &kp UNDERSCORE  &kp PLUS      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
+                                                          &trans            &trans            &trans            &trans    &trans  &trans     &mo 3           &trans
             >;
         };
 
         raise_layer {
             bindings = <
-&trans  &kp LG(LS(NUMBER_4))  &trans        &trans        &trans        &trans                     &trans        &trans     &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1          &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                     &kp NUMBER_6  &kp N7     &kp N8        &kp NUMBER_9  &kp NUMBER_0  &trans
-&kp F1  &kp F2                &kp F3        &kp F4        &kp F5        &kp F6                     &kp LEFT      &kp DOWN   &kp UP_ARROW  &kp RIGHT     &trans        &trans
-&kp F7  &kp F8                &kp F9        &kp F10       &kp F11       &kp F12  &trans    &trans  &trans        &kp MINUS  &kp EQUAL     &trans        &trans        &kp NON_US_BACKSLASH
-                                            &trans        &trans        &trans   &trans    &trans  &trans        &trans     &trans
+&trans                &trans            &trans            &trans        &trans            &trans                              &trans        &trans     &trans        &trans        &trans        &trans
+&trans                &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4      &kp N5                              &kp NUMBER_6  &kp N7     &kp N8        &kp NUMBER_9  &kp NUMBER_0  &trans
+&kp RC(RS(NUMBER_4))  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(N3)    &kp LC(NUMBER_4)  &kp LC(NUMBER_5)                    &kp LEFT      &kp DOWN   &kp UP_ARROW  &kp RIGHT     &kp LC(LEFT)  &kp LC(RIGHT)
+&trans                &trans            &trans            &trans        &trans            &trans            &trans    &trans  &trans        &kp MINUS  &kp EQUAL     &trans        &trans        &kp NON_US_BACKSLASH
+                                                          &trans        &trans            &trans            &trans    &trans  &trans        &trans     &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
